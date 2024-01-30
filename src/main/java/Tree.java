@@ -28,7 +28,7 @@ public class Tree {
     public List<TreeNode> getAllLeaves() {
         List<TreeNode> leaves = new ArrayList<>();
         for (TreeNode node : getAllNodes()) {
-            if (node.isLeaf() && !node.isRoot()) {
+            if (node.isLeaf()) {
                 leaves.add(node);
             }
         }
